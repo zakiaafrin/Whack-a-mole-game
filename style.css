@@ -18,10 +18,7 @@ body {
 }
 
 h1 {
-  text-align: center;
-  line-height: 1;
-  margin-bottom: 0;
-  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
 }
 
 #start {
@@ -42,7 +39,6 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-
 .name{
   display: flex;
   justify-content: center;
@@ -50,6 +46,18 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   justify-content: space-between;
+}
+
+.time {
+  width: 120px;
+  border: 3px solid white;
+  background-color: #a00423ab;
+  color: white;
+  border-radius: 50%;
+  padding: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 21px;
 }
 
 .board{

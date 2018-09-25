@@ -48,22 +48,18 @@ function startGame() {
         timeUp = true;
         button.innerHTML = '<img src="./img/playagain.png" alt="Go Button" style="height: 60px; width: 140px;">'
         button.style.visibility = 'visible';
-      }, 15000);
-      countdownTimer();
+    }, 15000);
+    countdownTimer();
 }
 
 function countdownTimer() {
-    var timer = setInterval(function() {
+    var timer = setInterval(function () {
         timeleft--;
         countdownNum.textContent = timeleft;
         if (timeleft <= 0)
-          clearInterval(timer);
-        }, 1000);
-  
-        setTimeout(() => {
-          countdownNum.textContent = '10';
-        }, 11500)
-  }
+            clearInterval(timer);
+    }, 1000);
+}
 
 function bonk(e) {
     if (!e.isTrusted) return;
@@ -72,6 +68,8 @@ function bonk(e) {
     this.parentNode.classList.remove('up');
     scoreBoard.textContent = score;
     molecount.textContent = count;
+    // button.innerHTML = '<img src="./img/playagain.png" class="mole" style="height: 60px; width: 140px;">'
+    // button.style.visibility = 'visible';
 }
 
 moles.forEach(mole => mole.addEventListener('click', bonk));

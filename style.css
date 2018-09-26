@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background-image: url('./img/background4.png');
+  background-image: url('./img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -44,45 +44,49 @@ h1 {
   justify-content: space-between;
 }
 .name{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 60px;
   font-size: 20px;
   font-weight: bold;
-  justify-content: space-between;
 }
 
 .time {
-  width: 120px;
+  width: 145px;
   border: 3px solid white;
   background-color: #bd062aab;
   color: white;
   border-radius: 50%;
-  padding: 9px;
+  padding: 21px;
   font-size: 20px;
   font-weight: bold;
   margin-left: 10px;
   margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .board{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
 }
 
 .score {
-  background: rgba(255,255,255,0.2);
   line-height: 1;
-  border-radius: 1rem;
   text-align: right; 
   display: inline-block;
   margin-right: 2px;
 }
-
+.score-count{
+  border: 3px solid white;
+  margin-top: 12px; 
+  margin-bottom: 12px; 
+  background-color:#bd062aab; 
+  color: white; 
+  border-radius: 50%; 
+  padding: 20px;
+}
 .mole-count {
   line-height: 1;
   border-radius: 2rem;
@@ -187,10 +191,3 @@ h1 {
     transform: translate3d(10px, 0, 0);
   }
 }
-
- 
-
-
-
-
-

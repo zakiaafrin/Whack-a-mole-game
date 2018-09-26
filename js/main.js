@@ -26,7 +26,7 @@ function randomHole(holes) {
 }
 
 function peep() {
-    const time = randomTime(700, 1500);
+    const time = randomTime(600, 1500);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(() => {
@@ -46,7 +46,7 @@ function startGame() {
     peep();
     setTimeout(() => {
         timeUp = true;
-        button.innerHTML = '<img src="./img/playagain.png" alt="Go Button" style="height: 60px; width: 140px;">'
+        button.innerHTML = '<img src="./img/playagain.png" alt="Play Again" style="height: 60px; width: 140px;">'
         button.style.visibility = 'visible';
     }, 15000);
     countdownTimer();
@@ -65,7 +65,7 @@ function bonk(e) {
     if (!e.isTrusted) return;
     score += 3;
     count++;
-    this.parentNode.classList.remove('up');
+    this.classList.remove('up');
     scoreBoard.textContent = score;
     molecount.textContent = count;
     // button.innerHTML = '<img src="./img/playagain.png" class="mole" style="height: 60px; width: 140px;">'
@@ -73,3 +73,13 @@ function bonk(e) {
 }
 
 moles.forEach(mole => mole.addEventListener('click', bonk));
+
+
+
+
+
+
+
+
+
+

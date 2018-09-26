@@ -9,15 +9,21 @@
 
 <body>
     <div class="header">
-        <div id="start" onClick="startGame()" style="display: flex; justify-content: center; align-items: center;">
-            <img src="./img/start.png" alt="Go Button" style="height: 50px; width: 70px;">
+
+        <div>
+            <div class="time">Time :
+                <div class="countdownwidth">
+                    <div id="countdown">15</div>s
+                </div>
+            </div>
         </div>
+
         <div class="name">
             <h1 style="font-size: 40px; display: flex; justify-content: center;">Whack A Mole
                 <img src="./img/mole1.png" alt="Logo" style="height: 60px; width: 50px; margin-left: 10px;">
             </h1>
-            
         </div>
+
         <div class="board">
 
             <div style="border: 2px solid white; background-color:#bd062aab; color: white; border-radius: 50%; padding: 10px;"> Score :
@@ -28,29 +34,28 @@
             </div>
         </div>
     </div>
-    <div class="time">Time :
-        <div class="countdownwidth">
-            <div id="countdown">15</div>s
-        </div>
+    <div id="start" onClick="startGame()" style="display: flex;">
+        <img src="./img/start.png" alt="Play Again" style="height: 50px; width: 80px;">
     </div>
+
     <div class="game">
-        <div class="hole hole1" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole1">
+            <div class="mole"></div>
         </div>
-        <div class="hole hole2" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole2">
+            <div class="mole"></div>
         </div>
-        <div class="hole hole3" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole3">
+            <div class="mole"></div>
         </div>
-        <div class="hole hole4" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole4">
+            <div class="mole"></div>
         </div>
-        <div class="hole hole5" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole5">
+            <div class="mole"></div>
         </div>
-        <div class="hole hole6" id="hammer">
-            <div class="mole" id="mole-pic"></div>
+        <div class="hole hole6">
+            <div class="mole"></div>
         </div>
     </div>
 

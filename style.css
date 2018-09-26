@@ -19,6 +19,10 @@ body {
 
 h1 {
   font-size: 40px;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 #start {
@@ -51,13 +55,14 @@ h1 {
 .time {
   width: 120px;
   border: 3px solid white;
-  background-color: #a00423ab;
+  background-color: #bd062aab;
   color: white;
   border-radius: 50%;
   padding: 9px;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 21px;
+  margin-left: 10px;
+  margin-top: 12px;
 }
 
 .board{
@@ -74,6 +79,14 @@ h1 {
   line-height: 1;
   border-radius: 1rem;
   text-align: right; 
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.mole-count {
+  line-height: 1;
+  border-radius: 2rem;
+  text-align: right;
   display: inline-block;
   margin-right: 2px;
 }
@@ -146,31 +159,38 @@ h1 {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
- 
+
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
- 
+
   20%, 40%, 60%, 80% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
- }
- 
- @keyframes shake {
+}
+
+@keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
- 
+
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
- 
+
   20%, 40%, 60%, 80% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
- }
+}
+
+ 
+
+
+
+
+
